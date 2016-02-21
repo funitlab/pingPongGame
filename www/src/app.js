@@ -45,7 +45,7 @@
         // create a renderer instance
         var width = window.innerWidth//screen.availWidth;
         var height = window.innerHeight//screen.availHeight;
-        var renderer = new autoDetectRenderer(width, height, {backgroundColor : 0x000000});
+        var renderer = new autoDetectRenderer(width, height);
 
         // add the renderer view element to the DOM
         document.body.appendChild(renderer.view);
@@ -215,6 +215,7 @@
    
             // update roundBox position
             roundBox.x = _mouseX;
+            roundBox.y = height - 20;
         }
         
         function onMouseUp(mouseData){
@@ -376,3 +377,4 @@
     }, false);
 
 }());
+
