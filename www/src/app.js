@@ -351,7 +351,7 @@
         
         function initGameOverScene(){
             var loseMessage = new Text(
-                  "YOU LOSE :(\n\nTAP ME TO RETRY", 
+                  "YOU LOSE :((\n\nTAP ME TO RETRY", 
                   {font: "32px sans-serif", fill: "white", align: "center"}
                  );
             loseMessage.anchor.x = 0.5;
