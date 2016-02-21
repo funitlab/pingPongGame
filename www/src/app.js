@@ -197,6 +197,19 @@
             if(isStopGame){
                reset();
             }
+            
+             var mouse = mouseData.data.originalEvent;
+            _mouseY = mouse.y;
+            _mouseX = mouse.x;
+            
+            if(_mouseX > (width - roundBox.width)){
+                
+                _mouseX = width - roundBox.width;
+                
+            }
+   
+            // update roundBox position
+            roundBox.x = _mouseX;
         }
         
         function onMouseMove(mouseData){
@@ -216,7 +229,6 @@
    
             // update roundBox position
             roundBox.x = _mouseX;
-            roundBox.y = height - 20;
         }
         
         function onMouseUp(mouseData){
