@@ -41,6 +41,7 @@
         stage.mousedown = stage.touchstart = onMouseDown;
         stage.mousemove = stage.touchmove = onMouseMove;
         stage.mouseup = stage.touchend = onMouseUp;
+        stage.tap = onMouseMove;
         
         // create a renderer instance
         var width = window.innerWidth//screen.availWidth;
